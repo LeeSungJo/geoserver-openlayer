@@ -3,14 +3,18 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import MapTest from "./mapTest/MapTest";
+// import MapTest from "./components/MapTest";
+import SelectFeatureByHover from "./components/SelectFeatureByHover";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <MapTest>
+    <SelectFeatureByHover>
       <App />
-    </MapTest>
+    </SelectFeatureByHover>
+    {/* <MapTest>
+      <App />
+    </MapTest> */}
   </React.StrictMode>
 );
 

@@ -1,6 +1,6 @@
 import "./App.css";
-import { useContext, useState } from "react";
-import MapTestContext from "./mapTest/MapTestContext";
+import { useContext } from "react";
+import MapTestContext from "./components/MapTestContext";
 
 function App() {
   const { map } = useContext(MapTestContext);
@@ -26,7 +26,7 @@ function App() {
     <>
       <div
         id="map"
-        style={{ position: "relative", width: "100%", height: "80vh" }}
+        style={{ position: "relative", width: "100%", height: "90vh" }}
       />
       <button onClick={handleZoomInClick}>+</button>
       <button onClick={handleZoomOutClick}>-</button>
